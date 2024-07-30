@@ -1,2 +1,3 @@
-#Decks
-###An Operating System Designed To Be Simple
+# Decks
+### An Operating System I'm Making
+Note: this page is a WIP
