@@ -1,3 +1,9 @@
+@font-face {
+    font-family: Font;
+    src: url('../Font.ttf');
+}
+
+
 .center {
     text-align: center;
 }
@@ -7,6 +13,7 @@
 }
 
 body {
+    font-family: Font;
     background-color: black;
     color: rgb(90, 255, 0);
 }
