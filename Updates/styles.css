@@ -1,0 +1,55 @@
+@font-face {
+    font-family: Font;
+    src: url('../Font.ttf');
+}
+
+
+
+.container {
+    text-align: center;
+    color: rgb(90, 255, 0);
+}
+
+body {
+    font-family: Font;
+    background-color: black;
+    font-size: 17px;
+}
+
+hr {
+    width: 50%;
+    height: 10px;
+    border-color: rgb(90, 255, 0);
+    background-color: rgb(90, 255, 0);
+}
+
+.box {
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 4px;
+
+    background-color: rgb(28, 28, 28);
+    border-color: rgb(90, 255, 0);
+
+    border: solid;
+    width: 40%;
+    border-width: 4px;
+
+    max-width: fit-content;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    font-family: Font;
+    font-size: 15px;
+    background: none;
+    border: solid;
+    color: rgb(90, 255, 0);
+    border-color: rgb(90, 255, 0);
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 8px;
+}
