@@ -56,6 +56,7 @@ BITS 32        ;All code from now on will be in 32 bit mode
 
 protected_mode:
 
+
 ;Segment register setup
     mov ax, 0x10               ;Data segment selector (index 2 in GDT)
     mov ds, ax                 ;Load ds register
@@ -78,6 +79,7 @@ protected_mode:
     mov edi, 0xB8a02 ;Move 1 character ahead
     mov al, ')'      ;Switch character to ")"
     mov [edi], ax    ;Write character again
+
 
 
 ;Far jump To The Kernel

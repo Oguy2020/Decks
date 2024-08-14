@@ -1,9 +1,12 @@
 cd ..
 
-gcc -ffreestanding -c KernelMain/deckskernel.c -o deckskernel.o
-gcc -ffreestanding -c KernelMain/deckstextmode.c -o deckstextmode.o
+export PATH="$PATH:/usr/local/i386elfgcc/bin"
 
-ld -o deckskernel.bin -Ttext 0x1000 --oformat binary deckskernel.o deckstextmode.o
+
+i386-elf-gcc -ffreestanding -m32 -g -O0 -c KernelMain/deckskernel.c -o deckskernel.o
+i386-elf-gcc -ffreestanding -m32 -g -O0 -c KernelMain/deckstextmode.c -o deckstextmode.o
+
+i386-elf-ld -o deckskernel.bin -T Build/linker.ld --oformat binary deckskernel.o deckstextmode.o
 
 nasm -f bin Bootloader/decksbootloader.asm -o decksbootloader.bin
 

@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "deckstextmode.h": "c",
+        "stdint.h": "c"
+    }
+}

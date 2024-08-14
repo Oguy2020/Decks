@@ -1,8 +1,11 @@
 #ifndef DECKSTEXTMODE_H
 #define DECKSTEXTMODE_H
 
-    //Make prototypes of all functions
-void WriteChar(char character);
+#include <stdint.h> //Include the stdint header to support uint variable type
+
+void SetColor(uint8_t foreground, uint8_t background);
+void WriteChar(char c);
 void SetPos(int x, int y);
+void ClearScreen();
 
 #endif
